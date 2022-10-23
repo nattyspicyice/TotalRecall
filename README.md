@@ -166,9 +166,9 @@ Note: You don't really need `.splice()` for these. You could use it, but there a
 
 Given the following array: `const myArray = [5, 10, 500, 20]`
 
-- Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+- Add the string "Aegon" to the end of the array. Add another string of your choice to the end of the array.
 - Remove the 5from the beginning of the array.
-- Add the string "Bob Marley"to the beginning of the array.
+- Add the string "Bob Marley" to the beginning of the array.
 - Remove the string of your choice from the end of the array.
 - Reverse this array using `Array.prototype.reverse()`. 
 - Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
@@ -247,6 +247,7 @@ const thomsCloset = [
 
 
 2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+
 Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
 
 3. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
@@ -287,7 +288,7 @@ Write a function `printCoolthat` accepts one parameter, `name`, as an argument. 
 
 
 ### C. calculateCube
-Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
+Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
 
 `console.log(calculateCube(5));`
 `=> 125`
