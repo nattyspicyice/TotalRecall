@@ -418,3 +418,52 @@ function oldAndLoud (person) {
     return person;
 }
 console.log(oldAndLoud(user));
+
+///Mama Cat///
+const cat1that = {
+    name: "Coco",
+    breed: "Tabby",
+    age: 7
+    }
+    
+    console.log(cat1that.age);
+    console.log(cat1that.breed);
+    
+    ///Papa Cat///
+    const cat2that = {
+        name: "Simon",
+        breed: "Tuxedo Cat",
+        age: 8
+        }
+    
+    ///Combine Cats///
+    function combineCats(mama, papa) {
+        console.log(mama);
+        console.log(papa);
+    }
+    
+    combineCats(cat1that, cat2that); //output {name: 'Coco', breed: 'Tabby', age: 7} && {name: 'Simon', breed: 'Tuxedo Cat', age: 8}
+    combineCats(
+        cat1 = { 
+            name: "Craig", 
+            age: 20, 
+            breed: "unknown" },
+        cat2 = { 
+            name: "Linda", 
+            age: 20, breed: 
+            "undefined" 
+        }
+    ); //output {name: 'Craig', age: 20, breed: 'unknown'} && {name: 'Linda', age: 20, breed: 'undefined'}
+    
+    //Make it so the combineCats function will return a combination of the two incoming cats!//
+    combineCats(
+        {
+            name: cat1that.name + cat2that.name,
+            age: 1,
+            breed: cat1that.breed + `-` + cat2that.breed,
+        }
+    ); //output {name: 'CocoSimon', age: 1, breed: 'Tabby-Tuxedo Cat'}
+    
+    //Cat Brain Bender//
+    combineCats(combineCats(combineCats(cat1that, cat2that)), combineCats(combineCats(cat1that, cat2that)));
+    
