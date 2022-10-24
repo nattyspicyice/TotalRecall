@@ -1,4 +1,8 @@
-/* Q + A
+/*===============
+//======Q&A======
+//===============
+
+
 1. How do we assign a value to a variable?
 
 Using the assignment operator =
@@ -20,7 +24,7 @@ Declaring a variable names the variable, assigning it gives it a value, and defi
 
 ////////
 5. What is pseudocoding and why should you do it?
-Pseudocoding is breaking down code in plain English to help yourself and other programmers (who may or may not know different programming languages) understand the logic of the coding problem
+Pseudocoding is breaking down code in plain English to help yourself and other programmers (who may not know the same language) understand the logic of the coding problem
 
 ////////
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
@@ -28,77 +32,87 @@ Pseudocoding is breaking down code in plain English to help yourself and other p
 this is depends how long it takes to understand the logic behind the problem, but thinking about the problem is solving the problem. I would spend 10% of time thinking about it, and then the rest of the time typing out the code trying to solve it.
 */
 
-// STRINGS 
-// let firstVariable = "Hello World";
-// firstVariable = 9;
-// let secondVariable = firstVariable;
-// secondVariable = "Any String";
+
+//===============
+//====STRINGS====
+//===============
+
+
+let firstVariable = "Hello World";
+firstVariable = 9;
+let secondVariable = firstVariable;
+secondVariable = "Any String";
 
 // //the value of the firstVariable is 9
 
-// let myName = "Nat";
-// console.log(`Hello, my name is ${myName}!`);
+let myName = "Nat";
+console.log(`Hello, my name is ${myName}!`);
 
 
-// //BOOLEANS
-// const a = 4;
-// const b = 53;
-// const c = 57;
-// const d = 16;
-// const e = 'Kevin';
+//===============
+//===BOOLEANS====
+//===============
+
+
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
  
-// console.log(a < b);
-// console.log(c > d);
-// console.log('Name' === 'Name');
+console.log(a < b); //true
+console.log(c > d); //true
+console.log('Name' === 'Name'); //true
 
-// ////// FOR THE NEXT TWO, USE ONLY && OR ||
+//FOR THE NEXT TWO, USE ONLY && OR ||
 
-// console.log(true || false);
-// console.log(false && false && false && false && false || true);
+console.log(true || false); //true
+console.log(false && false && false && false && false || true); //true
 
-// console.log(false === false)
-// console.log(e == 'Kevin');
-// console.log(a < b + c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)`
-// console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"`
-// console.log(48 == '48');
+console.log(false === false); //true
+console.log(e == 'Kevin'); //true
+console.log(a < b + c); //true
+console.log(a * a === d); //true
+console.log(48 == '48'); //true
 
-// ////////////////////////
-// console.log("The Farm");
+//=====THE FARM=====
 
-// let animal = "cow";
-// if (animal === "cow"){
-//     console.log("moooo!");
-// } else {
-//     console.log("Hey! You're not a cow.")
-// }
+let animal = "cow";
+if (animal === "cow"){
+    console.log("moooo!");
+} else {
+    console.log("Hey! You're not a cow.")
+}
 
-// animal === "cow" ? console.log("moooo!") : console.log("Hey! You're not a cow.");
+animal === "cow" ? console.log("moooo!") : console.log("Hey! You're not a cow.");
 
-// ////////////////////////
-// console.log("Driver's Ed");
-// let personsAge = 15;
-// if (personsAge >= 16){
-//     console.log("Here are the keys!")
-// } else {
-//     console.log("Sorry, you're too young.")
-// }
-// ////////////////////////
+//=====DRIVERS ED=====
 
-////LOOPS
+let personsAge = 18;
+if (personsAge >= 16){
+    console.log("Here are the keys!")
+} else {
+    console.log("Sorry, you're too young.")
+}
 
-// for(let i = 0; i <= 10; i++){
-//     console.log(i);
-// }
+
+//===============
+//=====LOOPS=====
+//===============
+
+for(let i = 0; i <= 10; i++){
+   console.log(i);
+}
 
 /*for(let i=10; i<=400; i++){
     console.log(i);
 }*/
 
 // for (let i = 12; i <= 4000; i += 3){
-//     console.log(i);
+//      console.log(i);
 // }
 
-//Get Even
+//=====GET EVEN=====
 
 // for (let i = 1; i <= 100; i++){
 //     if (i % 2 == 0){
@@ -106,22 +120,23 @@ this is depends how long it takes to understand the logic behind the problem, bu
 //     }
 // }
 
-//Give Me 5
+//====GIVE ME 5====
 
-// for (let i = 0; i <= 100; i++){
-//     if (i % 5 == 0 && i % 3 == 0){
-//         console.log(`I am a ${i}. Three is a crowd! High Five!`);
-//     }
-//     else if (i % 5 == 0){
-//         console.log(`I am a ${i}. High Five!`);
-//     }
-//     else if (i % 3 == 0){
-//         console.log(`I am a ${i}. Three is a crowd!`);
-//     };
-// }
+for (let i = 0; i <= 100; i++){
+    if (i % 5 == 0 && i % 3 == 0){
+        console.log(`I am a ${i}. Three is a crowd! High Five!`);
+    }
+    else if (i % 5 == 0){
+        console.log(`I am a ${i}. High Five!`);
+    }
+    else if (i % 3 == 0){
+        console.log(`I am a ${i}. Three is a crowd!`);
+    };
+}
 
 
-//Savings Account
+//==SAVINGS ACCOUNT==
+
 let bank_account = 0;
 
 for (let i = 1; i <= 10; i++){
@@ -129,7 +144,6 @@ for (let i = 1; i <= 10; i++){
 } 
 
 console.log(`$` + bank_account);
-////
 
 let bank_account2 = 0;
 
@@ -139,39 +153,46 @@ for(let i = 1; i <= 100; i++){
 console.log(`$` + bank_account2);
 
 
-//ARRAYS & CONTROL FLOW
-/////////A/////////////
+//====================
+//=ARRAYS AND STRINGS=
+//====================
+
+//=======A=======
 /*
 What are the things in an array called?
 elements
 
 Do Arrays guarantee those things will be in order?
-no, you have to manually sort it using methods
+yes, they are ordered from index 0 through the rest of the elements in the list
 
 What real-life thing could you model with an array?
 shopping list, user emails, anything you can put in a list
 */
-/////////B/////////////
-// let quotes = [
-//     "Quote1",
-//     "Quote2",
-//     "Quote3"
-// ];
 
-// console.log(quotes);
+//=======B=======
 
-/////////C/////////////
-// const randomThings = [1, 10, "Hello", true];
+let quotes = [
+    "Quote1",
+    "Quote2",
+    "Quote3"
+];
 
-// //accessing the first element
-// console.log(randomThings[0]); //output 1
+console.log(quotes);
 
-// //changing the value
-// randomThings[2] = "World";
-// console.log(randomThings[2]);
-// console.log(randomThings);
+//=======C=======
 
-/////////D/////////////
+const randomThings = [1, 10, "Hello", true];
+
+//accessing the first element
+console.log(randomThings[0]); //output 1
+
+//changing the value
+randomThings[2] = "World";
+console.log(randomThings[2]);
+console.log(randomThings);
+
+//=======D=======
+
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
 
 //to access the 3rd element
@@ -185,7 +206,8 @@ console.log(ourClass[4]);
 ourClass.push("Cloud City");
 console.log(ourClass);
 
-/////////E/////////////
+//=======E=======
+
 const myArray = [5, 10, 500, 20]
 
 //adding two more elements at the end of the array
@@ -210,17 +232,17 @@ console.log(myArray);
 
 // Yes, we mutated the array because we changed the order and data of the elements in the array. The .reverse method reverse the order of the data, but the Array.reverse.protoype resulted in an error?
 
-/////////BIGGIE SMALLS/////////////
+//====BIGGIE SMALLS====
 
-let i = 99;
+let i = 90;
 
-if (i<100){
+if (i < 100){
     console.log("little number")
-} else if (i>=100) {
+} else {
     console.log("big number")
 };
 
-/////////Monkey in the Middle/////////
+//===Monkey in the Middle===
 const num = 6;
 
 if (num < 5) {
@@ -231,7 +253,7 @@ if (num < 5) {
     console.log("monkey")
 };
 
-/////////What's in Your Closet?/////////
+//====What's in Your Closet?====
 
 const kristynsCloset = [
     "left shoe",
@@ -249,7 +271,7 @@ console.log("Kristyn is rocking that " + kristynsCloset[2] +  " today!")
 kristynsCloset.splice([6], 0, "RayBans");
 console.log(kristynsCloset);
 
-//modifying knit hat in Kristyns closet
+//modifying the knit hat in Kristyns closet
 kristynsCloset[5] = "stained knit hat";
 console.log(kristynsCloset);
 
@@ -283,21 +305,23 @@ thomsCloset[1] = "Footie Pajamas";
 
 console.log(thomsCloset[1]);
 
-/////////Functions/////////
+//===================
+//=====FUNCTIONS=====
+//===================
 
-/////////printGreeting/////////
+//======printGreeting======
 function printCoolThat(name){
     console.log(`${name} is cool`);
 }
 printCoolThat("Captain Reynolds");
 
-///////calculateCube/////////
+///=====calculateCube=====
 function calculateCube(num){
     console.log(num ** 3);
 }
 calculateCube(5);
 
-///////isVowel///////// <-- practice this one
+//=====isVowel======
 
 const vowel = ["a", "e", "i", "o", "u"];
 
@@ -311,14 +335,14 @@ function isVowel(character){
 }
 console.log(isVowel("B"));
 
-///////Get Two Lengths///////// <-- practice this one
+//======Get Two Lengths======
 function getTwoLengths(parameter1, parameter2){
     return [parameter1.length, parameter2.length]
 }
 
 console.log(getTwoLengths("hey", "hello"));
 
-//////////getMultipleLengths//////// <-- practice this one
+//======getMultipleLengths======
 
 function getMultipleLengths(strings){
     const output = [];
@@ -329,7 +353,7 @@ function getMultipleLengths(strings){
 };
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-//////////maxOfThree////////
+//======maxOfThree======
 
 function maxOfThree(num1, num2, num3){
     if (num1 > num2 && num1 > num3) {
@@ -345,22 +369,22 @@ function maxOfThree(num1, num2, num3){
 
 console.log(maxOfThree(3, 45, 3));
 
-/////////printLongestWord///////// COME BACK TO THIS
-// function printLongestWord(arrayOfStrings){
-//     for (let i = 0; i < arrayOfStrings.length; i++){
-//         console.log(arrayOfStrings[i].length);
-//     }
-// }
+//======printLongestWord====== <-- COME BACK TO THIS ONE
+let arrayWithStrings = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"];
 
-// function printLongestWord(arrayWithStrings) {
-//     let arrayWithStrings = [];
-//     arrayWithStrings.
-// }
+function printLongestWord(arrayOfStrings){
+    for (let i = 0; i < arrayOfStrings.length; i++){
+        console.log(arrayOfStrings[i].length);
+    }
+}
 
-// arrayWithStrings = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"];
+printLongestWord(arrayWithStrings);
 
-/////////Objects/////////
-/////////Make a user object/////////
+//===================
+//======OBJECTS======
+//===================
+
+//======Make a user object======
 const user = {
     name: "Nat",
     email: "natty@spice.com",
@@ -374,20 +398,20 @@ const user = {
     }
 }
 
-/////////Update the user/////////
+//=====Update the user=====
 user.email = "natty@spicyice.com"
 
-//birthday//
+//=====birthday=====
 user.age++
 
-/////////Adding keys and values/////////
+//=====Adding keys and values=====
 user.location = "Denver";
 
-/////////Shopaholic/////////
+//=====Shopaholic=====
 user.purchased.push("carbohydrates", "peace of mind", "Merino jodhpurs");
 console.log(user.purchased);
 
-/////////Object-within-object/////////
+//=====/Object-within-object=====
 console.log(user.friend.name);
 console.log(user.friend.location);
 user.friend.age = 55;
@@ -395,7 +419,10 @@ console.log(user.friend.age); //output 55
 user.friend.purchased.push("The One Ring", "A latte");
 console.log(user.friend);
 
-/////////Loops/////////
+//==================
+//=LOOPS W/ OBJECTS=
+//==================
+
 for (let i = 0; i < user.purchased.length; i++) {
     console.log(user.purchased[i]);
 }
@@ -404,7 +431,10 @@ for (let i = 0; i < user.friend.purchased.length; i++) {
     console.log(user.friend.purchased[i]);
 }
 
-/////////Functions can operate on objects/////////
+//======================
+//=FUNCTIONS W/ OBJECTS=
+//======================
+
 function updateUserThat(){
     user.age++
     user.name = user.name.toUpperCase();
@@ -419,7 +449,11 @@ function oldAndLoud (person) {
 }
 console.log(oldAndLoud(user));
 
-///Mama Cat///
+//===================
+//=======EXTRA=======
+//===================
+
+//====Mama Cat====
 const cat1that = {
     name: "Coco",
     breed: "Tabby",
